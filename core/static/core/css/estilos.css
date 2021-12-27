@@ -1,0 +1,113 @@
+
+body{
+    background-color: #000019;
+}
+
+.div-1{
+    width: 25%;
+    height: 100vh;
+    background-color: #000019;
+    float: left;
+    border-right-width: 2px;
+    border-right-style: groove;
+    border-right-color: black;
+    
+}
+
+.div-2{
+    float: right;
+    height: 100vh;
+    width: 75%;
+    transition: all 0.5s ease;
+    background: url('https://i.pinimg.com/originals/de/34/12/de3412e3c5d2ed0b11ec8291a28a3db5.gif');
+    cursor: pointer;
+    
+}
+
+
+
+.img-1{
+    height: 100%;
+    width: 100%; 
+}
+
+.menu{
+    
+    padding: 5%;
+    
+}
+.menu ul li {
+    margin: 15%;
+    list-style: none;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: rgb(236, 235, 235);
+    font-weight: bolder;
+    transition: all 0.5s ease;
+    font-size: 95%;
+}
+
+.menu ul li a:hover{
+    font-size: 130%;
+    text-decoration: none;
+    color: #cf0b0b;
+    cursor: pointer;
+}
+
+
+/* Imagen Logo  */
+.img-logo{
+    width: 30%;
+    margin-left: 32%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.img-logo:hover{
+    width: 33%;
+    margin-left: 32%;
+    cursor: pointer;
+}
+
+.div-img{
+    
+    background: url(https://cutewallpaper.org/21/wallpaper-gif-1920x1080/g-Technology.gif);
+    height: 100%;
+    background-position: center;
+    width: 100%;
+    background-size: cover;
+    
+}
+
+
+h1 {
+    color: aliceblue;
+    text-align: center;
+    margin-top: 7%;
+}
+
+span{
+    transition: all 0.6s ease;
+}
+span:hover{
+    color: red;
+    cursor: pointer;
+    font-size: 125%;
+}
+
+.h{
+    color: #feff00;
+}
+
+.i{
+    color: #9308de;
+}
+
+.g{
+    color: #0035e4;
+}
+
+.d{
+    color:#20c7e9;
+}
