@@ -32,7 +32,7 @@ const divAlien = () => {
     
     
     <div class="div-alien">
-        <img class="img-alien" src="https://cdn-icons.flaticon.com/png/128/3705/premium/3705309.png?token=exp=1640574511~hmac=7a052f22528e6355072ee4b8c48b23f5" alt="">
+        <img class="img-alien" src="https://raw.githubusercontent.com/gonzalor9991/portafolio/main/core/static/core/img/ovni.png" alt="">
         <div class ="msg">
             <h6>Sigueme</h6>
         </div>
@@ -91,11 +91,13 @@ const hiddEn = (p) =>{
     
     if (p === 1) {
         let div = document.getElementById('div-text-1');
-        div.style.display = 'none' 
+        div.style.display = 'none';
+        desaparecerIconos();
     }
     else{
         let div = document.getElementById('div-text-2');
-        div.style.display = 'none' 
+        div.style.display = 'none';
+        desaparecerIconos(); 
     }
     
 }
@@ -106,11 +108,36 @@ const shoW = (p) =>{
     if (p === 1) {
         let div = document.getElementById('div-text-1');
         div.style.display = '' 
+        aparecerIconos();
     }
     else{
         let div = document.getElementById('div-text-2');
-        div.style.display = '' 
+        div.style.display = '';
+        aparecerIconos();
     }
     
 }
+
+const desaparecerIconos = () =>{
+    let icon_1 = document.getElementById('1');
+    let icon_2 = document.getElementById('2');
+    let icon_3 = document.getElementById('3');
+    
+    icon_1.style.display = 'none';
+    icon_2.style.display = 'none';
+    icon_3.style.display = 'none';
+    
+}
+
+const aparecerIconos = () =>{
+    let icon_1 = document.getElementById('1');
+    let icon_2 = document.getElementById('2');
+    let icon_3 = document.getElementById('3');
+    
+    icon_1.style.display = '';
+    icon_2.style.display = '';
+    icon_3.style.display = '';
+    
+}
+
 

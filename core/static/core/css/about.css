@@ -36,7 +36,6 @@
     position: absolute;
     left: 27%;
     top: 32%;
-    padding: 1%;
     transition: all 0.5s ease;
     font-size: 0px;
 }
@@ -52,41 +51,33 @@
     position: absolute;
     left: 72%;
     top: 32%;
-    padding: 1%;
     font-size: 0px;
     transition: all 0.5s ease;
 }
 
 .div-text-2:hover{
-    top: 29%;
+    top: 5%;
     background: white;
     color: black;
-    text-align: center;
     border-style: groove;
     border-color: rgb(224 0 216);
-    width: 28%;
-    left: 48%;
-    font-size: 100%;
+    width: 35%;
+    left: 45%;
+    font-size: 90%;
     font-weight: 700;
-    margin-bottom: 2%;
     
 }
 
 .div-text:hover{
-    top: 32%;
+    top: 5%;
     background: white;
     color: black;
-    text-align: center;
     border-style: groove;
     border-color: rgb(224 0 216);
-    width: 25%;
-    left: 50%;
-    font-size: 100%;
-    font-weight: 700;
-    margin-bottom: 2%;
-    
-    
-    
+    width: 35%;
+    left: 45%;
+    font-size: 90%;
+    font-weight: 700;  
 }
 
 
