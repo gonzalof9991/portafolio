@@ -3,6 +3,14 @@ body{
     background-color: #000019;
 }
 
+.div-2{
+    float: right;
+    height: 100vh;
+    width: 75%;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    
+}
 .div-1{
     width: 25%;
     height: 100vh;
@@ -11,16 +19,6 @@ body{
     border-right-width: 2px;
     border-right-style: groove;
     border-right-color: black;
-    
-}
-
-.div-2{
-    float: right;
-    height: 100vh;
-    width: 75%;
-    transition: all 0.5s ease;
-    background: url('https://i.pinimg.com/originals/de/34/12/de3412e3c5d2ed0b11ec8291a28a3db5.gif');
-    cursor: pointer;
     
 }
 
@@ -72,7 +70,7 @@ body{
 
 .div-img{
     
-    background: url(https://cutewallpaper.org/21/wallpaper-gif-1920x1080/g-Technology.gif);
+    background: url('https://cutewallpaper.org/21/wallpaper-gif-1920x1080/g-Technology.gif');
     height: 100%;
     background-position: center;
     width: 100%;

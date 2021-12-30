@@ -20,7 +20,7 @@
   </head>
   <body>
     
-    <div class="div-1" onmouseover="quitar()">
+    <div class="div-1" {% if request.path == '/about/' %}onmouseover="quitar()"{% endif %}>
         <header>
           <h1> 
             <span class="h">H</span> <span>i,</span> <br> 
@@ -34,15 +34,16 @@
         </header>
         <nav class="menu">
             <ul>
+                <li> <a href="{% url 'home' %}">HOME </a> </li>
                 <li> <a href="{% url 'about' %}">ABOUT ME</a></li>
-                <li> <a href="">SKILLS </a> </li>
+                <li> <a href="{% url 'skills' %}">SKILLS </a> </li>
                 <li> <a href=""> CONTACT </a></li>
-                <li> <a href="">EDUCATION </a> </li>
+              
             </ul>
         </nav>
     </div>
 
-    <div class="div-2" id="div-2" onmouseover="mostrar()">
+    <div class="div-2" id="div-2" {% if request.path == '/about/' %}onmouseover="mostrar()"{% endif %}>
 
         {% block contenido %}
 
