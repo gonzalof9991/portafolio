@@ -1,3 +1,17 @@
+body{
+    background-color: black;
+}
+
+.div-1{
+    background: black;
+}
+
+.menu ul li a:hover{
+    font-size: 130%;
+    text-decoration: none;
+    color: rgb(224 0 216);
+    cursor: pointer;
+}
 
 
 .div-2{
@@ -9,4 +23,79 @@
     cursor: pointer;
     background-repeat: round;
     
+}
+
+
+.div-carusel{
+    margin-top: 5%;
+}
+
+.img-card{
+    width: 50%;
+    margin-left: 26%;
+}
+
+.card-div{
+    width: 18rem;
+    background: #131212;
+    color: white;
+    padding: 3%;
+    border-radius: 10%;
+    margin-bottom: 10%;
+    transition: all 0.5s ease;
+}
+
+.card-div:hover{
+    width: 22rem;
+    background: #333030;
+    animation-name: mover;
+    animation-duration: 1s;
+    
+}
+
+.card-title{
+    margin: 0;
+    text-align: center;
+}
+
+.row{
+    width: 100%;
+    margin-top: 5%;
+}
+
+.barra{
+    width: 100%;
+    height: 5px;
+    background: #2f2f2f;
+    margin-top: 2%;
+}
+
+.progress{
+    width: 70%;
+    height: 5px;
+    background: green;
+}
+
+.porcentaje{
+    margin: 0;
+    text-align: end;
+}
+
+.h3-div{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: xxx-large;
+}
+
+hr{
+    height: 5%;
+    width: 100%;
+    background: #605e5e;
+}
+
+
+@keyframes mover {
+    from {transform: rotate(-5deg);}
+    to {transform: rotate(5deg);}    
 }

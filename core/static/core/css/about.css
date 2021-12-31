@@ -178,17 +178,12 @@
 
   
 @keyframes icono-1 {
-    from {left: 0%;}
+    from {left: 25%;}
     to {left: 35%;}
     
 }
 
-@keyframes icono-2 {
-    from {top: 0%;}
-    to {top: 6%;}
-    
-    
-}
+
 
 @keyframes icono-3 {
     from {left: 90%;}

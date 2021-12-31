@@ -12,6 +12,7 @@ body{
     
 }
 .div-1{
+    position: fixed;
     width: 25%;
     height: 100vh;
     background-color: #000019;
@@ -21,6 +22,8 @@ body{
     border-right-color: black;
     
 }
+
+
 
 
 
@@ -51,6 +54,8 @@ body{
     text-decoration: none;
     color: #cf0b0b;
     cursor: pointer;
+    animation-name: mover;
+    animation-duration: 5s;
 }
 
 
@@ -92,6 +97,9 @@ span:hover{
     color: red;
     cursor: pointer;
     font-size: 125%;
+    animation-name: mover;
+    animation-duration: 5s;
+    
 }
 
 .h{
@@ -109,3 +117,10 @@ span:hover{
 .d{
     color:#20c7e9;
 }
+
+
+@keyframes mover {
+    from {transform: rotate(-5deg);}
+    to {transform: rotate(5deg);}    
+}
+
