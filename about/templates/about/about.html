@@ -1,0 +1,41 @@
+<!--Se extiende desde base html -->
+{% extends 'core/base.html '%}
+<!--Se extiende de title -->
+{% block title %} Sobre Mi | Portafolio {% endblock%}
+
+
+{% load static %}
+
+{% block estilos %}
+<link rel="stylesheet" href="{% static 'core/css/about.css' %}">
+{% endblock %}
+
+<!-- De igual manera que en la base.html se ocupa el block content-->
+{% block contenido %}
+
+<section>
+    {% for publicacion in publicaciones  %}
+    <article>
+        
+        <div class="card" >
+            <img src="{{publicacion.src}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{publicacion.titulo}}</h5>
+              <p class="card-text">{{publicacion.contenido}}</p>
+            </div>
+        </div>
+        
+        
+    </article>
+      
+    {% endfor %}
+   
+</section>
+ 
+    
+
+{% endblock%}
+
+{% block scripts %}
+<script src="{% static 'core/js/about.js' %}"></script>
+{% endblock %}

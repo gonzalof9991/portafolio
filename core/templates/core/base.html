@@ -20,30 +20,39 @@
   </head>
   <body>
     
-    <div class="div-1" {% if request.path == '/about/' %}onmouseover="quitar()"{% endif %}>
-        <header>
-          <h1> 
-            <span class="h">H</span> <span>i,</span> <br> 
-            <span class="i">I'</span> <span>m</span> 
-            <span class="g">G</span> <span>o</span> <span>n</span> <span>z</span> <span>a</span> <span>l</span> <span>o,</span> <br>
-            <span class="d">D</span> <span>e</span> <span>v</span> <span>e</span> <span>l</span> <span>o</span> <span>p</span> <span>e</span> <span>r</span>
-          
-          </h1>
+    <div class="div-1" >
+       
+        <nav class="menu">
+
+          <img src="{% static 'core/img/logo_empresa_2.png'%}" class="img-fluid" alt="...">
+          <ul>
+              <li> <a href="{% url 'home' %}">Inicio </a> </li>
+              <li> <a href="{% url 'about' %}">Sobre Mi</a></li>
+              <li> <a href="{% url 'skills' %}">Skills </a> </li>
+              <li> <a href=""> Contacto </a></li>
+            
+          </ul>
+
           
            
-        </header>
-        <nav class="menu">
-            <ul>
-                <li> <a href="{% url 'home' %}">HOME </a> </li>
-                <li> <a href="{% url 'about' %}">ABOUT ME</a></li>
-                <li> <a href="{% url 'skills' %}">SKILLS </a> </li>
-                <li> <a href=""> CONTACT </a></li>
+          <div class="footer">
               
-            </ul>
+                    <img class="img-icon" src="https://cdn-icons-png.flaticon.com/128/1409/1409946.png" alt="">
+                  
+                    <img class="img-icon" src="https://cdn-icons-png.flaticon.com/128/1384/1384060.png" alt="">
+                  
+                    <a href="https://github.com/gonzalor9991" target="blank_">
+                      <img class="img-icon" src="https://cdn-icons-png.flaticon.com/128/733/733553.png" alt="">
+                    </a>
+                    <a href="https://github.com/gonzalor9991" target="blank_">
+                      <img class="img-icon" src="https://cdn-icons-png.flaticon.com/128/1409/1409937.png" alt="">
+                    </a>
+                
+          </div>
         </nav>
     </div>
 
-    <div class="div-2" id="div-2" {% if request.path == '/about/' %}onmouseover="mostrar()"{% endif %}>
+    <div class="div-2" id="div-2" >
 
         {% block contenido %}
 
@@ -52,9 +61,7 @@
 
     </div>
     
-    <footer>
-
-    </footer>
+   
 
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
