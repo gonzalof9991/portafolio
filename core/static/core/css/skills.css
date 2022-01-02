@@ -1,24 +1,18 @@
 
 
 body{
-    background: url(https://www.freecodecamp.org/news/content/images/2021/08/chris-ried-ieic5Tq8YMk-unsplash.jpg);
-    background-position: bottom;
+    background: url(https://github.com/gonzalor9991/portafolio/blob/main/core/static/core/img/fondo_negro.jpg?raw=true);
     font-family: 'Times New Roman', Times, serif;
 }
 
 .menu ul li a:hover{
     font-size: 130%;
     text-decoration: none;
-    color: rgb(224 0 216);
     cursor: pointer;
 }
 
 
 
-
-.div-carusel{
-    margin-top: 5%;
-}
 
 .img-card{
     width: 50%;
@@ -37,7 +31,7 @@ body{
 }
 
 .col{
-    padding: 5%;
+    padding: 4%;
 }
 .card-div:hover{
     width: 14rem;
