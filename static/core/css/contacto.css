@@ -1,0 +1,66 @@
+
+.row{
+    margin: 0;
+    opacity: 1;
+    animation-name: row;
+    animation-duration: 5s;
+}
+
+body{
+    background: antiquewhite;
+}
+
+h1{
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    font-size: 300%;
+    animation-name: letra;
+    animation-duration: 5s;
+    transition: all 0.5s ease;
+}
+
+h4{
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    margin-bottom: 4%;
+    animation-name: h4;
+    animation-duration: 5s;
+    font-size: 200%;
+}
+
+h1:hover{
+    text-decoration-line:underline;
+}
+
+.btn{
+    background: wheat;
+    color: white;
+    font-weight: bolder;
+    transition: all 0.4s ease;
+}
+
+.btn:hover{
+    background: rgb(255, 255, 255);
+    color: wheat;
+    font-weight: bolder;
+
+}
+
+@keyframes letra {
+    from {font-size: 0%;}
+    to {font-size: 300%;}    
+}
+
+@keyframes h4 {
+    from {font-size: 0%;}
+    to {font-size: 200%;}    
+}
+
+
+
+@keyframes row {
+    from {opacity: 0;}
+    to {opacity: 1;}    
+}

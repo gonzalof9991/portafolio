@@ -1,0 +1,84 @@
+
+
+.div-skills{
+    
+    margin-bottom: 3%;
+}
+
+.img-card{
+    width: 50%;
+    margin-left: 26%;
+}
+
+.card-div{
+    width: 13rem;
+    color: black;
+    padding: 3%;
+    border-radius: 10%;
+    margin-bottom: 10%;
+    transition: all 0.5s ease;
+}
+
+.col{
+    margin-left: 18%;
+}
+.card-div:hover{
+    width: 14rem;
+    box-shadow: 0px 0px 1rem rgb(0, 0, 0,0.8);
+    cursor: pointer;
+    
+    
+}
+
+.card-title{
+    margin: 0;
+    text-align: center;
+}
+
+.row{
+    width: 100%;
+    margin-top: 5%;
+}
+
+.container{
+    padding: 0;
+}
+.barra{
+    width: 100%;
+    height: 5px;
+    background: #2f2f2f;
+    margin-top: 2%;
+}
+
+.progress{
+    width: 60%;
+    height: 5px;
+    background: green;
+}
+
+.porcentaje{
+    margin: 0;
+    text-align: end;
+}
+
+.h3-div{
+    background: #0007;
+    padding: 2%;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: xxx-large;
+}
+
+hr{
+    height: 5%;
+    width: 100%;
+    background: #605e5e;
+}
+
+
+@keyframes mover {
+    from {transform: rotate(-5deg);}
+    to {transform: rotate(5deg);}    
+}
