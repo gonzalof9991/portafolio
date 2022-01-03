@@ -155,3 +155,11 @@ a:hover{
     text-decoration: none;
 }
 
+
+.active{
+    border-bottom-style:solid;
+    border-bottom-width: 2px;
+    font-size: 130%;
+    text-decoration: none;
+    color: white;
+}

@@ -29,10 +29,10 @@
 
          
           <ul>
-              <li> <a href="{% url 'home' %}">Inicio </a> </li>
-              <li> <a href="{% url 'about' %}">Sobre mi</a></li>
-              <li> <a href="{% url 'skills' %}">Skills</a> </li>
-              <li> <a href="{% url 'contacto' %}">Contacto </a></li>
+              <li> <a href="{% url 'home' %}" class="{% if request.path == '/' %}active{% endif %}">Inicio </a> </li>
+              <li> <a href="{% url 'about' %}" class="{% if request.path == '/about/' %}active{% endif %}">Sobre mi</a></li>
+              <li> <a href="{% url 'skills' %}" class="{% if request.path == '/skills/' %}active{% endif %}">Skills</a> </li>
+              <li> <a href="{% url 'contacto' %}" class="{% if request.path == '/contacto/' %}active{% endif %}">Contacto </a></li>
             
           </ul>
 

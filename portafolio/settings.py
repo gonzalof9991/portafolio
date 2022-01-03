@@ -27,7 +27,7 @@ with open(os.path.join(BASE_DIR,'secret_key.txt')) as f:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['decisions.pythonanywhere.com']
 
 
 # Application definition
@@ -148,4 +148,4 @@ SECURE_SSL_REDIRECT = True
 
 SECURE_HSTS_SECONDS = 31536000 # 1 AÑO
 SECURE_HSTS_PRELOAD = True
-SECURE_HSTS_INCLUDE_SUBDOMAINS = True 
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True  
