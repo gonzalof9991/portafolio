@@ -14,7 +14,7 @@ const agregarCafe = () => {
     let h4 = document.getElementById('h4-cafe');
     let div = document.getElementById('div-cafe');
     h4.innerHTML = `Vasos de cafe por dia : ${cafes}`;
-    div.innerHTML += crearCafe();
+    div.innerHTML = crearCafe();
 
     if(cafes === 20 ){
         clearInterval(c);

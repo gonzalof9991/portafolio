@@ -31,17 +31,23 @@ a .btn-card:hover{
 
 .card:hover{
     cursor: pointer;
-    box-shadow: 2px 2px 2px 2px rgb(0, 0, 0,0.8);
+    box-shadow: 0px 0px 1rem rgb(0, 0, 0,0.8);
 }
-.row{
-    margin-bottom: 5%;
+
+
+.row-card{
+    margin-bottom: 3%;
 }
+
+
 .img-fondo{
-    width: 80%;
+    width: 50%;
+    margin-left: 25%;
     transition: all 1s ease;
 }
 .img-fondo:hover{
-    width: 150%;
+    margin-left: 22%;
+    width: 60%;
     cursor: pointer;
 }
 .div-titulo{
@@ -73,12 +79,16 @@ article{
 
 .row-cafe{
     background: antiquewhite;
-    height: 60vh;
+    border-bottom-color: #98695e;
+    border-bottom-style: dashed;
+    border-top-color: #98695e;
+    border-top-style: dashed;
 }
 
 .img-cafe{
-    width: 5%;
+    width: 25%;
     margin: 2%;
+    margin-left: 32%;
     animation-name: cafe;
     animation-duration: 1s;
 }
@@ -114,8 +124,8 @@ article{
 }
 
 @keyframes cafe {
-    from {width: 5%}
-    to {width: 5.5%;}    
+    from {width: 25%}
+    to {width: 25.8%;}    
 }
 
 

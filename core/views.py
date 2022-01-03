@@ -7,5 +7,3 @@ def home(request):
     return render(request, "core/index.html",{'cards':cards})
 
 
-def skills(request):
-    return render(request, "core/skills.html")

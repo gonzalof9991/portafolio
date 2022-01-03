@@ -7,7 +7,7 @@ body{
 .div-2{
     height: 100%;
     float: right;
-    width: 75%;
+    width: 70%;
     transition: all 0.5s ease;
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
@@ -15,7 +15,7 @@ body{
 }
 .div-1{
     position: fixed;
-    width: 25%;
+    width: 30%;
     height: 100%;
     background-color: black;
     float: left;
@@ -44,7 +44,7 @@ ul{
     position: absolute;
     text-align: center;
     width: 100%;
-    top: 20%;
+    top: 5%;
 }
 .menu ul li {
     margin: 10%;
@@ -135,7 +135,7 @@ ul{
     position: absolute;
     width: 70%;
     top: 70%;
-    left: 21%;
+    left: 25%;
 }
 
 .img-icon{
@@ -143,6 +143,11 @@ ul{
     margin-top: 5%;
     margin-left: 5%;
     transition: all 0.5s ease;
+}
+
+.img-icon:hover{
+    width: 33px;
+    
 }
 
 

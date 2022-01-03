@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     # Mis apps
     'core',
     'about',
+    'skills',
+    'contacto',
     # Terceros
     'bootstrap4',
 ]

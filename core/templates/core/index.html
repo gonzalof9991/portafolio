@@ -15,30 +15,41 @@
 
 <!-- De igual manera que en la base.html se ocupa el block content-->
 {% block contenido %}
-  
+
+<div class="row">
+  <div class="col">
+    
+    <div class="div-titulo">
+          <h1 class="texto-titulo">
+            Mi nombre es Gonzalo Rojas
+          </h1>
+          <h2 class="texto-titulo">Desarrollador</h2>
+          
+    </div>
+  </div>
+</div>
+
  
     <div class="row fondo">
-        
+        <div class="col-1"></div>
         <div class="col">
           <img class="img-fluid img-fondo" src="https://image.freepik.com/vector-gratis/ingeniero-programador-profesional-escribiendo-codigo_3446-693.jpg?crop" alt="">
 
         </div>
-        <div class="col">
-          <div class="div-titulo">
-              <h1 class="texto-titulo">
-                Mi nombre es Gonzalo Rojas
-              </h1>
-              <h2 class="texto-titulo">Desarrollador</h2>
-              
-        </div>
-        </div>
+      
+        <div class="col-1"></div>
     </div>
 
+    
     <div class="row row-cafe">
       <div class="col">
         <h4 class="h4-cafe"  id="h4-cafe">Vasos de cafe por dia : 1</h4>
-        <div class="div-cafe" id="div-cafe">
-          
+        <div class="div-cafe" >
+          <div class="row">
+            <div class="col" id="div-cafe">
+
+            </div>
+          </div>
           
         </div>
        
@@ -50,7 +61,7 @@
         <hr>
         <h2>Proyectos realizados</h2>
         {% for card in cards  %}
-        <div class="row">
+        <div class="row row-card">
             <div class="col-1"></div>
             <div class="col">
                 <div class="card">

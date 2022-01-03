@@ -1,0 +1,136 @@
+<!--Se extiende desde base html -->
+{% extends 'core/base.html '%}
+<!--Se extiende de title -->
+{% block title %} Skills | Portafolio {% endblock%}
+
+
+{% load static %}
+
+{% block estilos %}
+<link rel="stylesheet" href="{% static 'core/css/skills.css' %}">
+{% endblock %}
+
+<!-- De igual manera que en la base.html se ocupa el block content-->
+{% block contenido %}
+
+<div class="container" id="main">
+    <div class="div-skills">
+        <h3 class="h3-div">Lenguajes</h3>
+        <div class="row" >
+            {% for skill  in skills   %}
+                {% if skill.categoria == 'Lenguaje' %}
+                    <div class="col">
+                        <div class="card card-div" >
+                            <img class="img-card"  src="{{skill.src}}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">{{skill.titulo}}</h5>
+                                <p class="porcentaje">{{skill.porcentaje}}%</p>
+                                <div class="barra">
+                                    <div class="progress"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+                {% endfor %}  
+        </div>
+        <hr>
+    </div> 
+
+    <div class="div-skills">
+        <h3 class="h3-div">Framework</h3>
+        <div class="row" >
+            {% for skill  in skills   %}
+                {% if skill.categoria == 'Framework' %}
+                    <div class="col">
+                        <div class="card card-div" >
+                            <img class="img-card"  src="{{skill.src}}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">{{skill.titulo}}</h5>
+                                <p class="porcentaje">{{skill.porcentaje}}%</p>
+                                <div class="barra">
+                                    <div class="progress"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+                {% endfor %}  
+        </div>
+        <hr>
+    </div> 
+
+
+    <div class="div-skills">
+        <h3 class="h3-div">Database</h3>
+        <div class="row" >
+            {% for skill  in skills   %}
+                {% if skill.categoria == 'Database' %}
+                    <div class="col">
+                        <div class="card card-div" >
+                            <img class="img-card"  src="{{skill.src}}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">{{skill.titulo}}</h5>
+                                <p class="porcentaje">{{skill.porcentaje}}%</p>
+                                <div class="barra">
+                                    <div class="progress"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+                {% endfor %}  
+        </div>
+        <hr>
+    </div> 
+
+
+
+
+    <div class="div-skills">
+        <h3 class="h3-div">En curso</h3>
+        <div class="row" >
+            {% for skill  in skills   %}
+                {% if skill.categoria == 'Curso' %}
+                    <div class="col">
+                        <div class="card card-div" >
+                            <img class="img-card"  src="{{skill.src}}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">{{skill.titulo}}</h5>
+                                <p class="porcentaje">{{skill.porcentaje}}%</p>
+                                <div class="barra">
+                                    <div class="progress" style="width: 20%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+                {% endfor %}  
+        </div>
+        <hr>
+    </div> 
+          
+        
+        
+       
+        
+      
+    
+    
+
+</div>
+
+
+
+
+
+
+
+{% endblock%}ç
+
+
+{% block scripts %}
+<script src="{% static 'core/js/skills.js' %}"></script>
+{% endblock %}
+
+
