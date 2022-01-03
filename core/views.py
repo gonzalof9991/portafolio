@@ -1,11 +1,11 @@
 from django.shortcuts import render
-
+from .models import Card
 # Create your views here.
 
 def home(request):
-    return render(request, "core/index.html")
-def about(request):
-    return render(request, "core/about.html")
+    cards = Card.objects.all()
+    return render(request, "core/index.html",{'cards':cards})
+
 
 def skills(request):
     return render(request, "core/skills.html")

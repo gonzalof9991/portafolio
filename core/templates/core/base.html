@@ -9,6 +9,9 @@
     <!-- Bootstrap CSS -->
      {% bootstrap_javascript jquery='full' %}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="{% static 'core/css/estilos.css' %}">
     <!-- Estilos -->
      {% block estilos %}
@@ -16,7 +19,7 @@
      {% endblock %}
     <!--Title -->
     <title>{% block title %} {% endblock %}</title>
-     <link rel="shortcut icon"  href="{% static 'core/img/logo_empresa.png' %}">
+     <link rel="shortcut icon"  href="{% static 'core/img/logo_empresa_2.png' %}">
   </head>
   <body>
     
@@ -27,25 +30,28 @@
          
           <ul>
               <li> <a href="{% url 'home' %}">Inicio </a> </li>
-              <li> <a href="{% url 'about' %}">Sobre Mi</a></li>
-              <li> <a href="{% url 'skills' %}">Skills </a> </li>
-              <li> <a href=""> Contacto </a></li>
+              <li> <a href="{% url 'about' %}">Sobre mi</a></li>
+              <li> <a href="{% url 'skills' %}">Skills</a> </li>
+              <li> <a href="">Contacto </a></li>
             
           </ul>
 
           
            
           <div class="footer">
-              
-                    <img class="img-icon" src="https://cdn-icons-png.flaticon.com/128/1409/1409946.png" alt="">
-                  
-                    <img class="img-icon" src="https://cdn-icons-png.flaticon.com/128/1384/1384060.png" alt="">
+                    <a href="https://www.instagram.com/decisions_web/" target="_blank">
+                      <img class="img-icon" src="https://cdn-icons-png.flaticon.com/128/1409/1409946.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCAzwokfdhk9cFk5JV3pTsxg" target="_blank">
+                      <img class="img-icon" src="https://cdn-icons-png.flaticon.com/128/1384/1384060.png" alt="Youtube">
+                    </a>
+                    
                   
                     <a href="https://github.com/gonzalor9991" target="blank_">
-                      <img class="img-icon" src="https://cdn-icons-png.flaticon.com/128/733/733553.png" alt="">
+                      <img class="img-icon" src="https://cdn-icons-png.flaticon.com/128/733/733553.png" alt="Github">
                     </a>
                     <a href="https://github.com/gonzalor9991" target="blank_">
-                      <img class="img-icon" src="https://cdn-icons-png.flaticon.com/128/1409/1409937.png" alt="">
+                      <img class="img-icon" src="https://cdn-icons-png.flaticon.com/128/1409/1409937.png" alt="Twitter">
                     </a>
                 
           </div>

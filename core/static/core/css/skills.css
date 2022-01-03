@@ -1,17 +1,5 @@
 
 
-body{
-    background: url(https://github.com/gonzalor9991/portafolio/blob/main/core/static/core/img/fondo_negro.jpg?raw=true);
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.menu ul li a:hover{
-    font-size: 130%;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-
 
 
 .img-card{

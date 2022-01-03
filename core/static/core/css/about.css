@@ -1,35 +1,68 @@
 
 
-body{
-    background: url(https://images.alphacoders.com/112/thumb-1920-1121804.png);
-    font-family: 'Times New Roman', Times, serif;
-}
+
 
 .card{
-    background: #0007;
-    color: white;
-    width: 60%;
-    margin-left: 20%;
+    background: #fff7;
+    color: black;
+    width: 50%;
+    margin-left: 25%;
     margin-top: 5%;
     margin-bottom: 3%;
     transition: all 0.5s ease;
 }
 
 .card:hover{
+    border-radius: 2rem;
+    margin-left: 20%;
     width: 65%;
     cursor: pointer;
+    box-shadow: 2px 2px 2px 2px rgb(0, 0, 0,0.8);
     
 }
 
-
-h1{
-    color: white;
+.card-img-top{
+    border-radius: 2rem;
 }
 
-h4{
-    color: white;
+.section-titulos{
+    background: #f7c02d;
+    height: 50vh;
 }
 
+.h1-titulos{
+    text-align: center;
+    padding-top: 2%;
+}
+.text-titulo{
+    text-align: center;
+    color: white;
+    font-size: xxx-large;
+    font-weight: bold;
+}
+.pista{
+    
+    border-bottom-color: white;
+    border-bottom-style: dotted;
+}
+.img-fluid{
+    width: 5%;
+    position: relative;
+}
+
+.titulo-1{
+    left: 25%;
+}
+
+.titulo-2{
+    left: 70%;
+}
+
+.icono-titulo{
+    left: 46%;
+    width: 10%;
+    opacity: 0;
+}
 .about-titulo{
     height: 10vh;
     padding: 2%;

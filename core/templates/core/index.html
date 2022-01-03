@@ -6,33 +6,83 @@
 
 {% load static %}
 
+{% block estilos %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="{% static 'core/css/index.css' %}">
+{% endblock %}
+
 <!-- De igual manera que en la base.html se ocupa el block content-->
 {% block contenido %}
-
-<div class="div">
-  <h1>Bienvenidos a mi Portafolio!</h1>
-</div>
-
-<div class="div-info">
-  <div class="row">
-    <div class="col"></div>
-    <div class="col">
-      <h4>
-        El exito no es definitivo.
-        <br>
-        El fracaso no es fatal. Lo que
-        cuenta es el valor para continuar.
-        <br>
-        <br>
-          "Winston Churchill "
-      </h4>
-    </div>
-    <div class="col"></div>
-  </div>
   
-</div>
+ 
+    <div class="row fondo">
+        
+        <div class="col">
+          <img class="img-fluid img-fondo" src="https://image.freepik.com/vector-gratis/ingeniero-programador-profesional-escribiendo-codigo_3446-693.jpg?crop" alt="">
 
+        </div>
+        <div class="col">
+          <div class="div-titulo">
+              <h1 class="texto-titulo">
+                Mi nombre es Gonzalo Rojas
+              </h1>
+              <h2 class="texto-titulo">Desarrollador</h2>
+              
+        </div>
+        </div>
+    </div>
 
+    <div class="row row-cafe">
+      <div class="col">
+        <h4 class="h4-cafe"  id="h4-cafe">Vasos de cafe por dia : 1</h4>
+        <div class="div-cafe" id="div-cafe">
+          
+          
+        </div>
+       
+      </div>
+    </div>
+
+    <section>
+      <article>
+        <hr>
+        <h2>Proyectos realizados</h2>
+        {% for card in cards  %}
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <img class="img-fluid img-card" src="{{card.imagen.url}}" alt="">
+                        <h5 class="card-title">{{card.titulo}}</h5>
+                        <p class="card-text">{{card.contenido}}</p>
+                        <a href="{{card.link}}" target=" _blank">
+                          <button class=" form-control btn-card">Visitar</button>
+                        </a>
+                      
+                    </div>
+                </div>
+            </div>  
+            <div class="col-1"></div>
+         
+          
+        </div>
+        {% endfor %}
+      </article>
+      <hr>
+    </section>
+  
+    
+   
+  
+  
 
 
 {% endblock%}
+
+
+{% block scripts %}
+<script src="{% static 'core/js/index.js' %}"></script>
+{% endblock %}

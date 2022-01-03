@@ -1,0 +1,121 @@
+
+
+.fondo{
+    width: 100%;
+    background-color: white;
+    margin: 0;
+    
+}
+
+
+a .btn-card{
+    color: black;
+    
+}
+
+a .btn-card:hover{
+    animation-name: color;
+    animation-duration: 5s;
+}
+
+.card-title{
+    text-align: center;
+    margin: 5%;
+}
+
+.card{
+    transition: all 0.3s ease;
+    border-radius: 2rem;
+    background-color: white;
+}
+
+.card:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 2px rgb(0, 0, 0,0.8);
+}
+.row{
+    margin-bottom: 5%;
+}
+.img-fondo{
+    width: 80%;
+    transition: all 1s ease;
+}
+.img-fondo:hover{
+    width: 150%;
+    cursor: pointer;
+}
+.div-titulo{
+    text-decoration-line: underline;
+    font-family: 'Lobster', cursive;
+    margin-top: 15%;
+    
+}
+
+.texto-titulo{
+    animation-name: letra;
+    animation-duration: 6s;
+}
+
+
+
+h1,h2{
+    font-size: xxx-large;
+    text-align: center;
+
+}
+
+article{
+    margin: 10%;
+    animation-name: section;
+    animation-duration: 6s;
+}
+
+
+.row-cafe{
+    background: antiquewhite;
+    height: 60vh;
+}
+
+.img-cafe{
+    width: 5%;
+    margin: 2%;
+    animation-name: cafe;
+    animation-duration: 1s;
+}
+
+
+
+.div-cafe{
+    margin-left: 8%;
+}
+
+.h4-cafe{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: xx-large;
+    margin: 2%;
+}
+
+
+@keyframes letra {
+    from {font-size: 0%;}
+    to {font-size: xxx-large;}    
+}
+
+@keyframes section {
+    from {display: none;}
+    to {display: none;}    
+}
+
+@keyframes color {
+    from {background-color: white; color: white}
+    to {background-color: #007bff ; color: white;}    
+}
+
+@keyframes cafe {
+    from {width: 5%}
+    to {width: 5.5%;}    
+}
+
+

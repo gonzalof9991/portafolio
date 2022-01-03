@@ -13,12 +13,34 @@
 <!-- De igual manera que en la base.html se ocupa el block content-->
 {% block contenido %}
 
+<section class="section-titulos">
+    <article>
+        <div>
+            <h1 class="text-titulo " id="texto">Mi viaje </h1>
+            <div>
+                <img id="icono" class="img-fluid icono-titulo" src="https://cdn-icons-png.flaticon.com/128/385/385318.png" alt="">
+            </div>
+        </div>
+       
+        <div class="pista">
+            <img id="gonzalo" class="img-fluid" src="https://cdn-icons-png.flaticon.com/512/2702/2702069.png" alt="">
+
+            <img id="titulo-1"  class="img-fluid titulo-1" src="https://cdn-icons-png.flaticon.com/128/1201/1201199.png" alt="">
+            <img id="titulo-2"  class="img-fluid titulo-2" src="https://cdn-icons-png.flaticon.com/128/1201/1201199.png" alt="">
+
+        </div>
+
+        
+        
+    </article>
+</section>
+
 <section>
     {% for publicacion in publicaciones  %}
     <article>
         
         <div class="card" >
-            <img src="{{publicacion.src}}" class="card-img-top" alt="...">
+            <img src="{{publicacion.src}}" class="card-img-top " alt="...">
             <div class="card-body">
               <h5 class="card-title">{{publicacion.titulo}}</h5>
               <p class="card-text">{{publicacion.contenido}}</p>

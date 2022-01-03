@@ -1,9 +1,8 @@
-
 body{
-    background: url(https://www.freecodecamp.org/news/content/images/2021/08/chris-ried-ieic5Tq8YMk-unsplash.jpg);
-    font-family: 'Times New Roman', Times, serif;
-    background-size: cover;
+    background: white;
+    font-family: 'Montserrat', sans-serif;
 }
+
 
 .div-2{
     height: 100%;
@@ -11,7 +10,7 @@ body{
     width: 75%;
     transition: all 0.5s ease;
     cursor: pointer;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Montserrat', sans-serif;
 
 }
 .div-1{
@@ -45,7 +44,7 @@ ul{
     position: absolute;
     text-align: center;
     width: 100%;
-    top: 25%;
+    top: 20%;
 }
 .menu ul li {
     margin: 10%;
@@ -54,6 +53,7 @@ ul{
 .menu ul li a{
     text-decoration: none;
     color: white;
+    font-size: 150%;
     font-weight: bolder;
     transition: all 0.1s ease;
     
@@ -84,7 +84,6 @@ ul{
 }
 
 .div-img{
-    background: url('https://cutewallpaper.org/21/wallpaper-gif-1920x1080/g-Technology.gif');
     height: 100%;
     background-position: center;
     width: 100%;
@@ -128,33 +127,7 @@ ul{
 }
 
 
-span{
-    transition: all 0.6s ease;
-}
-span:hover{
-    color: red;
-    cursor: pointer;
-    font-size: 125%;
-    animation-name: mover;
-    animation-duration: 5s;
-    
-}
 
-.h{
-    color: #feff00;
-}
-
-.i{
-    color: #9308de;
-}
-
-.g{
-    color: #0035e4;
-}
-
-.d{
-    color:#20c7e9;
-}
 
 .footer{
     background: black;
@@ -172,29 +145,8 @@ span:hover{
     transition: all 0.5s ease;
 }
 
-.img-icon:hover{
-    width: 40px;
-    cursor: pointer;
-}
 
-
-.div-perfil{
-    background: #0007;
-    backdrop-filter: blur(1px);
-    position: absolute;
-    width: 22%;
-    top: 40%;
-    left: 53%;
-    border-radius: 10rem;
-}
-
-.img-perfil{
-    width: 100%;
-    border-radius: 2rem;
-}
-
-
-.col{
-    padding: 0;
+a:hover{
+    text-decoration: none;
 }
 
