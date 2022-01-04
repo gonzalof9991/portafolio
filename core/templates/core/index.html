@@ -1,5 +1,5 @@
 <!--Se extiende desde base html -->
-{% extends 'core/base.html '%}
+{% extends 'core/base.html'%}
 <!--Se extiende de title -->
 {% block title %} Inicio | Portafolio {% endblock%}
 
@@ -7,23 +7,24 @@
 {% load static %}
 
 {% block estilos %}
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet"> 
 <link rel="stylesheet" href="{% static 'core/css/index.css' %}">
 {% endblock %}
 
 <!-- De igual manera que en la base.html se ocupa el block content-->
 {% block contenido %}
 
-<div class="row">
+<div class="row row-inicio">
   <div class="col">
     
     <div class="div-titulo">
           <h1 class="texto-titulo">
-            Mi nombre es Gonzalo Rojas
+            GONZALO ROJAS
           </h1>
-          <h2 class="texto-titulo">Desarrollador</h2>
+          <h2 class="texto-titulo txt">DESARROLLADOR</h2>
           
     </div>
   </div>
@@ -33,7 +34,7 @@
     <div class="row fondo">
         <div class="col-1"></div>
         <div class="col">
-          <img class="img-fluid img-fondo" src="https://image.freepik.com/vector-gratis/ingeniero-programador-profesional-escribiendo-codigo_3446-693.jpg?crop" alt="">
+          <img class="img-fluid img-fondo" src="https://github.com/gonzalor9991/portafolio/blob/main/core/static/core/img/logo_empresa_2.png?raw=true" alt="">
 
         </div>
       
@@ -43,7 +44,7 @@
     
     <div class="row row-cafe">
       <div class="col">
-        <h4 class="h4-cafe"  id="h4-cafe">Vasos de cafe por dia : 1</h4>
+       
         <div class="div-cafe" >
           <div class="row">
             <div class="col" id="div-cafe">
@@ -59,7 +60,7 @@
     <section>
       <article>
         <hr>
-        <h2>Proyectos realizados</h2>
+        <h2 class="titulo-p">Proyectos realizados</h2>
         {% for card in cards  %}
         <div class="row row-card">
             <div class="col-1"></div>

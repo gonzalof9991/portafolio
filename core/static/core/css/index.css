@@ -35,9 +35,8 @@ a .btn-card:hover{
 }
 
 
-.row-card{
-    margin-bottom: 3%;
-}
+
+
 
 
 .img-fondo{
@@ -51,23 +50,31 @@ a .btn-card:hover{
     cursor: pointer;
 }
 .div-titulo{
-    text-decoration-line: underline;
-    font-family: 'Lobster', cursive;
-    margin-top: 15%;
+    font-family: 'Krona One', sans-serif;
+    margin-top: 10%;
     
 }
 
-.texto-titulo{
-    animation-name: letra;
-    animation-duration: 6s;
+.txt{
+    margin-bottom: 10%;
 }
 
 
-
-h1,h2{
-    font-size: xxx-large;
+.row{
+    margin: 0;
+}
+.row-inicio{
+    background: #585166;
+}
+.texto-titulo{
+    color: white;
     text-align: center;
 
+}
+
+.titulo-p{
+    text-align: center;
+    margin-bottom: 4%;
 }
 
 article{
@@ -78,19 +85,13 @@ article{
 
 
 .row-cafe{
-    background: antiquewhite;
-    border-bottom-color: #98695e;
-    border-bottom-style: dashed;
-    border-top-color: #98695e;
-    border-top-style: dashed;
+    background: white;
+   
 }
 
 .img-cafe{
-    width: 25%;
+    width: 5%;
     margin: 2%;
-    margin-left: 32%;
-    animation-name: cafe;
-    animation-duration: 1s;
 }
 
 
@@ -105,6 +106,10 @@ article{
     font-weight: bold;
     font-size: xx-large;
     margin: 2%;
+}
+
+.row-card{
+    margin-bottom: 4%;
 }
 
 
@@ -124,8 +129,8 @@ article{
 }
 
 @keyframes cafe {
-    from {width: 25%}
-    to {width: 25.8%;}    
+    from {width: 5%}
+    to {width: 5.8%;}    
 }
 
 

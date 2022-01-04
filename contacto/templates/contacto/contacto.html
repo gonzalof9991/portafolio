@@ -9,7 +9,7 @@
 {% block estilos %}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet"> 
 <link rel="stylesheet" href="{% static 'core/css/contacto.css' %}">
 {% endblock %}
 
@@ -17,25 +17,27 @@
 {% block contenido %}
 
 <section>
-    <hr>
+    
     <article>
+        <img class="img-fluid" src="https://github.com/gonzalor9991/portafolio/blob/main/core/static/core/img/logo_empresa_2.png?raw=true" alt="">
+    </article>
+   
+    
+    <article class="art-1">
         <img class="img-fluid" src="" alt="">
         <h1>Contacto</h1>
         <h4>Gracias por visitar mi portafolio, es una creacion con mucho amor y dedicacion.</h4>
     </article>
     
-    <article>
-        <div class="row">
-            <div class="col-2"></div>
-            <div class="col">
-                <a  href="mailto:decisions.developer@gmail.com?&subject=Importante.">
-                    <button class=" form-control btn">Ir al correo</button>
-                </a>
-            </div>
-            <div class="col-2"></div>
-        </div>
+    <article class="art-btn">
+        
+        <a  href="mailto:decisions.developer@gmail.com?&subject=Importante.">
+            <button class=" form-control btn">Ir al correo</button>
+        </a>
+            
     </article>
-    <hr>
+    
+    
 </section>
 
 {% endblock%}

@@ -6,28 +6,31 @@
     animation-duration: 5s;
 }
 
-body{
-    background: antiquewhite;
+.art-1{
+    background: #463f57;
+    color: white;
+    padding: 2%;
+    margin-top: -7%;
 }
 
+
+.art-btn{
+    margin-top: 5%;
+}
 h1{
-    font-family: 'Lobster', cursive;
+    font-family: 'Krona One', sans-serif;
     text-align: center;
     margin-top: 10%;
     margin-bottom: 5%;
     font-size: 300%;
-    animation-name: letra;
-    animation-duration: 5s;
     transition: all 0.5s ease;
 }
 
 h4{
-    font-family: 'Lobster', cursive;
+    font-family: 'Krona One', sans-serif;
     text-align: center;
     margin-bottom: 4%;
-    animation-name: h4;
-    animation-duration: 5s;
-    font-size: 200%;
+    font-size: 150%;
 }
 
 h1:hover{
@@ -35,17 +38,27 @@ h1:hover{
 }
 
 .btn{
-    background: wheat;
+    width: 45%;
+    margin-left: 29%;
+    background: #463f57;
     color: white;
-    font-weight: bolder;
     transition: all 0.4s ease;
+    font-weight: bolder;
 }
 
 .btn:hover{
     background: rgb(255, 255, 255);
-    color: wheat;
+    color: #463f57;
+    border-style: solid;
+    border-color: #463f57;
     font-weight: bolder;
 
+}
+
+.img-fluid{
+    margin-left: 35%;
+    width: 30%;
+    margin-top: -7%;
 }
 
 @keyframes letra {
